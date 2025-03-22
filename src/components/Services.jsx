@@ -46,7 +46,7 @@ const Services = () => {
               px: 2,
               py: 0.5,
               mb: 2,
-              mt: 14
+              mt: {md:14, lg:14}
             }}
           >
             <Typography variant="h6" color="#FFBF40">Service Areas</Typography>
