@@ -18,7 +18,7 @@ const Hero = () => {
     <Box
       sx={{
         height: isMobile ? "500px" : "700px",
-        width: "100vw",
+        width: "100vw", // Ensure full viewport width
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
@@ -33,22 +33,22 @@ const Hero = () => {
       }}
     >
       {showVideo && (
-        <video 
-          id="video"
-          poster="assets/images/slider.jpg"
+        <video
           autoPlay
+          loop
           muted
+          playsInline
           style={{
             position: "absolute",
             top: 0,
             left: 0,
-            width: "100vw",
-            height: "100%",
+            width: "100vw", // Full viewport width
+            height: "100%", // Full container height
             objectFit: "cover",
             zIndex: -1,
           }}
         >
-          <source src="assets/images/video.mp4" type="video/mp4" />
+          <source src="/images/heroVideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       )}
@@ -63,8 +63,8 @@ const Hero = () => {
               left: "5%",
               zIndex: 1,
               textAlign: isMobile ? "center" : "left",
-              width: isMobile ? "90%" : "40%",
-              maxWidth: "600px",
+              width: isMobile ? "90%" : "40%", // Consistent width control
+              maxWidth: "600px", // Maximum width for consistency
             }}
           >
             <Typography
@@ -90,10 +90,10 @@ const Hero = () => {
               position: "absolute",
               bottom: "10%",
               right: isMobile ? "50%" : "5%",
-              transform: isMobile ? "translateX(50%)" : "none",
+              transform: isMobile ? "translateX(50%)" : "none", // Center on mobile
               textAlign: isMobile ? "center" : "left",
-              width: isMobile ? "90%" : "40%",
-              maxWidth: "600px",
+              width: isMobile ? "90%" : "40%", // Consistent width control
+              maxWidth: "600px", // Maximum width for consistency
               px: isMobile ? 2 : 0,
             }}
           >
