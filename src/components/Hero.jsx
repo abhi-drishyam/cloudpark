@@ -1,24 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 const Hero = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const [showVideo, setShowVideo] = useState(false);
+  const videoRef = useRef(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowVideo(true);
     }, 3000);
-
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    if (showVideo && videoRef.current) {
+      // When the video is loaded, attempt to enter full screen on iOS.
+      const handleLoadedData = () => {
+        if (videoRef.current && videoRef.current.webkitEnterFullscreen) {
+          videoRef.current.webkitEnterFullscreen();
+        }
+      };
+
+      videoRef.current.addEventListener("loadeddata", handleLoadedData);
+      // Cleanup listener
+      return () => {
+        if (videoRef.current) {
+          videoRef.current.removeEventListener("loadeddata", handleLoadedData);
+        }
+      };
+    }
+  }, [showVideo]);
 
   return (
     <Box
       sx={{
         height: isMobile ? "500px" : "700px",
-        width: "100vw", // Ensure full viewport width
+        width: "100vw",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
@@ -34,16 +53,17 @@ const Hero = () => {
     >
       {showVideo && (
         <video
+          ref={videoRef}
           autoPlay
           loop
           muted
-          playsInline
+          // Removed playsInline to allow full screen on iOS
           style={{
             position: "absolute",
             top: 0,
             left: 0,
-            width: "100vw", // Full viewport width
-            height: "100%", // Full container height
+            width: "100vw",
+            height: "100%",
             objectFit: "cover",
             zIndex: -1,
           }}
@@ -63,8 +83,8 @@ const Hero = () => {
               left: "5%",
               zIndex: 1,
               textAlign: isMobile ? "center" : "left",
-              width: isMobile ? "90%" : "40%", // Consistent width control
-              maxWidth: "600px", // Maximum width for consistency
+              width: isMobile ? "90%" : "40%",
+              maxWidth: "600px",
             }}
           >
             <Typography
@@ -90,10 +110,10 @@ const Hero = () => {
               position: "absolute",
               bottom: "10%",
               right: isMobile ? "50%" : "5%",
-              transform: isMobile ? "translateX(50%)" : "none", // Center on mobile
+              transform: isMobile ? "translateX(50%)" : "none",
               textAlign: isMobile ? "center" : "left",
-              width: isMobile ? "90%" : "40%", // Consistent width control
-              maxWidth: "600px", // Maximum width for consistency
+              width: isMobile ? "90%" : "40%",
+              maxWidth: "600px",
               px: isMobile ? 2 : 0,
             }}
           >
