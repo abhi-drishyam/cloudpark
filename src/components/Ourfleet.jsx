@@ -32,7 +32,7 @@ const OurFleet = () => {
                         px: 2,
                         py: 0.5,
                         mb: 1,
-                        mt: 10
+                        mt: {lg:10, md:10}
                     }}
                 >
                     <Typography variant="h6" color="#FFBF40">Our Fleet</Typography>
