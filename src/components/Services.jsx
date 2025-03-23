@@ -151,6 +151,7 @@ const Services = () => {
             justifyContent: "center",
             alignItems:{xs:"center"},
             gap: 2,
+            paddingTop:{md:16,lg:16},
             marginTop: 6,
           }}
         >

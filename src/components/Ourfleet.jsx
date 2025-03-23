@@ -169,7 +169,7 @@ const OurFleet = () => {
                         <img
                             src={truckImage}
                             alt="Modern Truck"
-                            style={{ width: "100%", height: "auto" }}
+                            style={{ width: "100%", height: "auto", scale:"1.2" }}
                         />
                     </Box>
                 </Box>

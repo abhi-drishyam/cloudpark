@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <Box
       sx={{
-        height: isMobile ? "500px" : "700px",
+        height: isMobile ? "400px" : "700px",
         width: "100vw", // Ensure full viewport width
         display: "flex",
         alignItems: "center",
@@ -30,6 +30,7 @@ const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         transition: "background-image 1s ease-in-out",
+        overflow:'hidden  '
       }}
     >
       {showVideo && (
@@ -40,7 +41,7 @@ const Hero = () => {
           playsInline
           style={{
             position: "absolute",
-            top: 0,
+            top: 0, 
             left: 0,
             width: "100vw", // Full viewport width
             height: "100%", // Full container height
@@ -59,7 +60,7 @@ const Hero = () => {
           <Box
             sx={{
               position: "absolute",
-              top: "10%",
+              top: "2%",
               left: "5%",
               zIndex: 1,
               textAlign: isMobile ? "center" : "left",
@@ -68,14 +69,14 @@ const Hero = () => {
             }}
           >
             <Typography
-              variant={isMobile ? "h5" : "h3"}
+              variant={isMobile ? "h6" : "h3"}
               fontWeight="bold"
               sx={{ color: "#035DB8", lineHeight: 1.1 }}
             >
               WELCOME TO
             </Typography>
             <Typography
-              variant={isMobile ? "h3" : "h1"}
+              variant={isMobile ? "h4" : "h1"}
               fontSize={isMobile ? "3rem" : "5rem"}
               fontWeight="bold"
               sx={{ color: "#035DB8", lineHeight: 1.1 }}
