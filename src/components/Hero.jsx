@@ -69,6 +69,8 @@ const Hero = () => {
               maxWidth: "600px", // Maximum width for consistency
             }}
           >
+{!isMobile && (
+  <>
             <Typography
               variant={isMobile ? "h6" : "h3"}
               fontWeight="bold"
@@ -84,6 +86,8 @@ const Hero = () => {
             >
               CLOUDPARK LOGISTICS
             </Typography>
+            </>
+            )}
           </Box>
 
           {/* Right Yellow Text */}
