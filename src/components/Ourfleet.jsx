@@ -166,11 +166,16 @@ const OurFleet = () => {
                             textAlign: "center",
                         }}
                     >
-                        <img
-                            src={truckImage}
-                            alt="Modern Truck"
-                            style={{ width: "100%", height: "auto", scale:"1.2" }}
-                        />
+                      <img
+  src={truckImage}
+  alt="Modern Truck"
+  style={{
+    width: "100%",
+    height: "auto",
+    transform: `scale(${isMobile ? 1 : 1.2})`, // Correct way to apply scale
+  }}
+/>
+
                     </Box>
                 </Box>
             </Box>

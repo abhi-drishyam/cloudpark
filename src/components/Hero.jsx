@@ -24,11 +24,12 @@ const Hero = () => {
         justifyContent: "space-between",
         color: "white",
         position: "relative",
-        px: isMobile ? 3 : 5,
+        px: isMobile ? 0 : 5,
         overflow: "hidden",
         backgroundImage: !showVideo ? "url('/images/IMG_0431.JPG')" : "none",
-        backgroundSize: "cover",
+        backgroundSize: {xs:"contain",md:"cover",lg:"cover"},
         backgroundPosition: "center",
+        backgroundRepeat:"no-repeat",
         transition: "background-image 1s ease-in-out",
         overflow:'hidden  '
       }}
@@ -60,11 +61,11 @@ const Hero = () => {
           <Box
             sx={{
               position: "absolute",
-              top: "2%",
+              top: {xs:"5%",md:"10%",lg:"10%"},
               left: "5%",
               zIndex: 1,
               textAlign: isMobile ? "center" : "left",
-              width: isMobile ? "90%" : "40%", // Consistent width control
+              width: isMobile ? "100%" : "40%", // Consistent width control
               maxWidth: "600px", // Maximum width for consistency
             }}
           >
@@ -76,12 +77,12 @@ const Hero = () => {
               WELCOME TO
             </Typography>
             <Typography
-              variant={isMobile ? "h4" : "h1"}
-              fontSize={isMobile ? "3rem" : "5rem"}
+              variant={isMobile ? "h5" : "h1"}
+              fontSize={isMobile ? "1.5rem" : "5rem"}
               fontWeight="bold"
               sx={{ color: "#035DB8", lineHeight: 1.1 }}
             >
-              CLOUDPARK <br /> LOGISTICS
+              CLOUDPARK LOGISTICS
             </Typography>
           </Box>
 
@@ -89,13 +90,14 @@ const Hero = () => {
           <Box
             sx={{
               position: "absolute",
-              bottom: "10%",
+              bottom: {xs:"2%",md:"10%",lg:"10%"},
               right: isMobile ? "50%" : "5%",
               transform: isMobile ? "translateX(50%)" : "none", // Center on mobile
               textAlign: isMobile ? "center" : "left",
               width: isMobile ? "90%" : "40%", // Consistent width control
               maxWidth: "600px", // Maximum width for consistency
               px: isMobile ? 2 : 0,
+              display:{xs:"none"}
             }}
           >
             <Typography variant={isMobile ? "h5" : "h4"}>
