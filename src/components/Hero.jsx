@@ -50,7 +50,7 @@ const Hero = () => {
             zIndex: -1,
           }}
         >
-          <source src="/images/cp3.mp4" type="video/mp4" />
+          <source src="/images/cp2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       )}
