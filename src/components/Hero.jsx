@@ -39,7 +39,7 @@ const Hero = () => {
           autoPlay
           loop
           muted
-          playsInline
+          // playsInline
           style={{
             position: "absolute",
             top: 0, 
