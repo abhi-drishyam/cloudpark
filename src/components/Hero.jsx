@@ -97,7 +97,7 @@ const Hero = () => {
               width: isMobile ? "90%" : "40%", // Consistent width control
               maxWidth: "600px", // Maximum width for consistency
               px: isMobile ? 2 : 0,
-              display:{xs:"none"}
+              display:{xs:"none",md:"block",lg:"block"}
             }}
           >
             <Typography variant={isMobile ? "h5" : "h4"}>
