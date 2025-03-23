@@ -11,7 +11,7 @@ const TruckAndTrailerRepairServices = () => {
       sx={{
         width: "100%",
         py: 6,
-        backgroundColor: "#f5f5f5",
+        backgroundColor: "#fff",
         paddingLeft: isMobile ? 0 : "6%", // Remove left padding for mobile
         marginBottom: "10%",
         overflow: "hidden",

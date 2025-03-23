@@ -9,7 +9,7 @@ const OurFleet = () => {
   return (
     <Box
       sx={{
-        py: 2,
+        py: {xs:6,md:0,lg:0},
         backgroundColor: "#fff",
         width: "100%",
       }}
@@ -177,7 +177,7 @@ const OurFleet = () => {
               style={{
                 width: "100%",
                 height: "auto",
-                transform: `scale(${isMobile ? 1 : 1.2})`, // Correct way to apply scale
+                transform: `scale(${isMobile ? 1 : 1.15})`, 
               }}
             />
           </Box>

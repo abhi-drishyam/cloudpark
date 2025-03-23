@@ -10,7 +10,7 @@ const WarehousingSolutions = () => {
   return (
     <Box
       sx={{
-        py: { md: 6, lg: 6 },
+        py: 6,
         backgroundColor: "#f5f5f5",
         display: "flex",
         justifyContent: "center",
@@ -73,9 +73,9 @@ const WarehousingSolutions = () => {
           sx={{
             display: "flex",
             justifyContent: "space-around",
-            gap: 14,
+            gap: {xs:8,md:14,md:14},
             flexWrap: "wrap",
-            marginTop: "128px",
+            marginTop: {xs:"70px",md:"128px",lg:"128px"},
           }}
         >
           {/* Temperature-Controlled Storage */}
