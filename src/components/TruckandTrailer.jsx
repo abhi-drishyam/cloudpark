@@ -13,7 +13,7 @@ const TruckAndTrailerRepairServices = () => {
         py: 6,
         backgroundColor: "#fff",
         paddingLeft: isMobile ? 0 : "6%", // Remove left padding for mobile
-        marginBottom: "10%",
+        marginBottom: "5%",
         overflow: "hidden",
         textAlign: isMobile ? "center" : "left", // Center align text on mobile
       }}
@@ -178,12 +178,8 @@ const TruckAndTrailerRepairServices = () => {
                 width: "100%",
                 maxWidth: "550px", // Prevents overly large image on desktop
                 objectFit: "cover",
-                display: isMobile ? "none" : "block", // Use "block" instead of an empty string
-                transform: `scale(${
-                  isMobile ? 1 : window.innerWidth >= 1024 ? 1.2 : 1.2
-                })`, // Using scale based on screen size
+                display: isMobile ? "none" : "block", // Hide image on mobile
               }}
-            />
             />
           </Box>
         </Box>
