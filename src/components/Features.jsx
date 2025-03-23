@@ -10,7 +10,7 @@ const features = [
 const Features = () => {
   return (
     <Container sx={{ py: {xs:5,md:10,lg:10}, textAlign: "center" }}>
-      <Typography variant="h3" fontWeight="bold" color="#035DB8" mb={6} fontSize={{xs:40}}>
+      <Typography variant="h3" fontWeight="bold" color="#035DB8" mb={6} fontSize={{xs:30}}>
         Driving Excellence in Every Mile
       </Typography>
       <Grid container spacing={5} alignItems="stretch">
