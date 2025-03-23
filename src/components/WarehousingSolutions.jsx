@@ -10,7 +10,7 @@ const WarehousingSolutions = () => {
   return (
     <Box
       sx={{
-        py: {md:6,lg:6},
+        py: { md: 6, lg: 6 },
         backgroundColor: "#f5f5f5",
         display: "flex",
         justifyContent: "center",
@@ -19,7 +19,7 @@ const WarehousingSolutions = () => {
       <Box
         sx={{
           textAlign: "center",
-          marginX: {xs:'30px',md:'124px'},
+          marginX: { xs: "30px", md: "124px" },
         }}
       >
         {/* Warehousing Solutions Label */}
@@ -30,7 +30,7 @@ const WarehousingSolutions = () => {
             color: "#ffffff",
             borderRadius: "20px",
             px: 2,
-            py: {md:0.5,lg:0.5},
+            py: { md: 0.5, lg: 0.5 },
             mb: 4,
           }}
         >
@@ -45,7 +45,7 @@ const WarehousingSolutions = () => {
           fontWeight="bold"
           color="#035DB8"
           gutterBottom
-          sx={{ mb: 2 ,fontSize:{xs:20} }}
+          sx={{ mb: 2, fontSize: { xs: 20 } }}
         >
           Expanding Your Capacity with Flexible Warehousing Solutions
         </Typography>
@@ -55,7 +55,12 @@ const WarehousingSolutions = () => {
           variant="body1"
           color="text.primary"
           paragraph
-          sx={{ mb: 6, maxWidth: "800px", margin: "0 auto", fontSize: {xs:16,md:20, lg:20} }}
+          sx={{
+            mb: 6,
+            maxWidth: "800px",
+            margin: "0 auto",
+            fontSize: { xs: 16, md: 20, lg: 20 },
+          }}
         >
           At CloudPark, we are building scalable warehousing solutions tailored
           for your needs. With storage options, including temperature-controlled
@@ -79,8 +84,8 @@ const WarehousingSolutions = () => {
               backgroundColor: "#035DB8",
               color: "#ffffff",
               borderRadius: "8px",
-              paddingY: 5,
-              paddingX: 3,
+              paddingY: 4,
+              paddingX: 2,
               flex: 1,
               minWidth: "150px",
               display: "flex",
@@ -95,23 +100,23 @@ const WarehousingSolutions = () => {
                 mb: 2,
                 backgroundColor: "#ffffff",
                 borderRadius: "50%",
-                width: 100,
-                height: 100,
+                width: 70,
+                height: 70,
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 position: "absolute",
                 top: 0,
-                left: "0",
+                left: "10px",
                 transform: "translate(-50%, -50%)",
                 transition: "transform 0.3s ease",
-                border:"2px solid #FFBF40"
+                border: "2px solid #FFBF40",
               }}
             >
               <img
                 src={coolerIcon}
                 alt="Cooler Icon"
-                style={{ width: "60px", height: "60px" }}
+                style={{ width: "40px", height: "40px" }}
               />
             </Box>
             <Typography variant="h6" fontWeight="bold" gutterBottom>
@@ -137,8 +142,8 @@ const WarehousingSolutions = () => {
               backgroundColor: "#035DB8",
               color: "#ffffff",
               borderRadius: "8px",
-              paddingY: 5,
-              paddingX: 3,
+              paddingY: 4,
+              paddingX: 2,
               flex: 1,
               minWidth: "300px", // Ensure minimum width for responsiveness
               display: "flex",
@@ -153,23 +158,23 @@ const WarehousingSolutions = () => {
                 mb: 2,
                 backgroundColor: "#ffffff",
                 borderRadius: "50%",
-                width: 100,
-                height: 100,
+                width: 70,
+                height: 70,
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 position: "absolute",
                 top: 0,
-                left: "0",
+                left: "10px",
                 transform: "translate(-50%, -50%)",
                 transition: "transform 0.3s ease",
-                border:"2px solid #FFBF40"
-             }}
+                border: "2px solid #FFBF40",
+              }}
             >
               <img
                 src={warehouseIcon}
                 alt="Warehouse Icon"
-                style={{ width: "60px", height: "60px" }}
+                style={{ width: "40px", height: "40px" }}
               />
             </Box>
             <Typography variant="h6" fontWeight="bold" gutterBottom>
@@ -188,8 +193,8 @@ const WarehousingSolutions = () => {
               backgroundColor: "#035DB8",
               color: "#ffffff",
               borderRadius: "8px",
-              paddingY: 5,
-              paddingX: 3,
+              paddingY: 4,
+              paddingX: 2,
               flex: 1,
               minWidth: "300px", // Ensure minimum width for responsiveness
               display: "flex",
@@ -204,23 +209,23 @@ const WarehousingSolutions = () => {
                 mb: 2,
                 backgroundColor: "#ffffff",
                 borderRadius: "50%",
-                width: 100,
-                height: 100,
+                width: 70,
+                height: 70,
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 position: "absolute",
                 top: 0,
-                left: "0",
+                left: "10px",
                 transform: "translate(-50%, -50%)",
                 transition: "transform 0.3s ease",
-                border:"2px solid #FFBF40"
+                border: "2px solid #FFBF40",
               }}
             >
               <img
                 src={leasingIcon}
                 alt="Leasing Icon"
-                style={{ width: "60px", height: "60px" }}
+                style={{ width: "40px", height: "40px" }}
                 padding="12px"
               />
             </Box>

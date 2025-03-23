@@ -166,23 +166,24 @@ const TruckAndTrailerRepairServices = () => {
           <Box
             sx={{
               width: isMobile ? "100%" : "30%", // Resize image on mobile
-              mx:"0", // Center image on mobile
+              mx: "0", // Center image on mobile
               textAlign: "center",
-              paddingTop:"30px"
+              paddingTop: "30px",
             }}
           >
-          <img
-  src={truckImage}
-  alt="Truck"
-  style={{
-    width: "100%",
-    maxWidth: "550px", // Prevents overly large image on desktop
-    objectFit: "cover",
-    display: isMobile ? "none" : "block", // Use "block" instead of an empty string
-    transform: `scale(${isMobile ? 1 : (window.innerWidth >= 1024 ? 1.2  : 1.2)})`, // Using scale based on screen size
-  }}
-/>
-
+            <img
+              src={truckImage}
+              alt="Truck"
+              style={{
+                width: "100%",
+                maxWidth: "550px", // Prevents overly large image on desktop
+                objectFit: "cover",
+                display: isMobile ? "none" : "block", // Use "block" instead of an empty string
+                transform: `scale(${
+                  isMobile ? 1 : window.innerWidth >= 1024 ? 1.2 : 1.2
+                })`, // Using scale based on screen size
+              }}
+            />
             />
           </Box>
         </Box>
