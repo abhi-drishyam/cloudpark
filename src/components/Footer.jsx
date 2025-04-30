@@ -87,7 +87,7 @@ const Footer = () => {
               <Typography fontWeight="bold" color="#fff">
                 24/7 Customer Service
               </Typography>
-              <Typography variant="body2" color="#035DB8">+1 416-900-8673</Typography>
+              <Typography variant="body2" color="#035DB8" sx={{textAlign:"left"}}>+1 416-900-8673</Typography>
             </Box>
           </Paper>
 
@@ -112,7 +112,7 @@ const Footer = () => {
                 { label: "Sal B.", email: "sal@cloudpark.ca" },
               ].map((contact, index) => (
                 <Box key={index} sx={{ display: "flex" }}>
-                  <Typography variant="body2" color="#fff" sx={{width:"100px"}}>
+                  <Typography variant="body2" color="#fff" sx={{width:"100px", textAlign:"left"}}>
                     {contact.label}
                   </Typography>
                   <Typography variant="body2" paddingLeft="15px" color="#035DB8">{contact.email}</Typography>
