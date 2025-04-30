@@ -29,9 +29,10 @@ const TruckAndTrailerRepairServices = () => {
             px: 2,
             py: 0.5,
             mb: 4,
+            fontWeight:"900"
           }}
         >
-          <Typography variant="h6" color="#FFBF40">
+          <Typography variant="h5" color="#FFBF40">
             Truck & Trailer Repair Services
           </Typography>
         </Box>

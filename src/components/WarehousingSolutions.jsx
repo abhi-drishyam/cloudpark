@@ -32,9 +32,10 @@ const WarehousingSolutions = () => {
             px: 2,
             py: { md: 0.5, lg: 0.5 },
             mb: 4,
+            fontWeight:"900"
           }}
         >
-          <Typography variant="h6" color="#FFBF40">
+          <Typography variant="h5" color="#FFBF40">
             Warehousing Solutions
           </Typography>
         </Box>

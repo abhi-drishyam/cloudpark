@@ -29,7 +29,7 @@ const About = () => {
       />
       <Container sx={{ position: "relative", zIndex: 1, textAlign: "center" }}>
         <Typography
-          variant="subtitle1"
+          variant="h5"
           sx={{
             bgcolor: "#035DB8",
             display: "inline-block",
@@ -37,6 +37,7 @@ const About = () => {
             py: 1,
             borderRadius: "20px",
             mb: {xs:4,md:2,lg:2},
+            fontWeight:"700"
           }}
         >
           ABOUT US

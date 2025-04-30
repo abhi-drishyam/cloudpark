@@ -46,10 +46,11 @@ const Services = () => {
               px: 2,
               py: 0.5,
               mb: 2,
-              mt: {md:14, lg:14}
+              mt: {md:14, lg:14},
+              fontWeight:"700"
             }}
           >
-            <Typography variant="h6" color="#FFBF40">Service Areas</Typography>
+            <Typography variant="h5" color="#FFBF40">Service Areas</Typography>
           </Box>
 
           {/* Main Heading */}

@@ -33,9 +33,10 @@ const OurFleet = () => {
             py: 0.5,
             mb: 1,
             mt: { lg: 10, md: 10 },
+            fontWeight:"700"
           }}
         >
-          <Typography variant="h6" color="#FFBF40">
+          <Typography variant="h5" color="#FFBF40">
             Our Fleet
           </Typography>
         </Box>

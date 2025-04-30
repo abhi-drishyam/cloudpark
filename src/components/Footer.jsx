@@ -112,7 +112,7 @@ const Footer = () => {
                 { label: "Sal B.", email: "sal@cloudpark.ca" },
               ].map((contact, index) => (
                 <Box key={index} sx={{ display: "flex" }}>
-                  <Typography variant="body2" color="#fff">
+                  <Typography variant="body2" color="#fff" sx={{width:"100px"}}>
                     {contact.label}
                   </Typography>
                   <Typography variant="body2" paddingLeft="15px" color="#035DB8">{contact.email}</Typography>
