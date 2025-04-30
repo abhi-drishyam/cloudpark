@@ -118,7 +118,7 @@ const TruckAndTrailerRepairServices = () => {
                 display: "grid",
                 gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)", // 2 cards in a row on desktop
                 gap: 3,
-                maxWidth: "75%",
+                maxWidth: {xs:"100%",md:"75%"},
                 mx: isMobile ? "auto" : "0", // Centering for mobile
               }}
             >
